@@ -1,0 +1,11 @@
+# Libray need
+pip install build
+pip install setuptools
+pip install mrjob
+
+and make one input.txt file
+inside it keep text like this
+
+hello world
+hello mrjob
+world of mrjob

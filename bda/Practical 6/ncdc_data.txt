@@ -1,0 +1,4 @@
+2020, 23.4, Some location
+2020, 30.5, Another location
+2021, 33.7, Location X
+2021, 28.9, Location Y
