@@ -1,0 +1,3 @@
+<listener>
+    <listener-class>com.example.UserCounterListener</listener-class>
+</listener>
