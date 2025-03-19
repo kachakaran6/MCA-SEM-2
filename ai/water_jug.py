@@ -1,21 +1,21 @@
 def water_jug_dfs(x, y, z):
-    stack = [(0, 0)]  # Start with both jugs empty
-    visited = set()  # Keep track of visited states
+    stack = [(0, 0)]  
+    visited = set()  
 
     while stack:
-        a, b = stack.pop()  # Get the current state
+        a, b = stack.pop()  
 
-        if (a, b) in visited:  # Skip already visited states
+        if (a, b) in visited:  
             continue
 
-        visited.add((a, b))  # Mark this state as visited
+        visited.add((a, b))  
 
-        # If we reach the target amount in either jug, return success
+       
         if a == z or b == z:
             print(f"Solution found: {a}, {b}")
             return True
 
-        # Possible operations:
+       
         # 1. Fill jug X (a -> x)
         stack.append((x, b))
 
@@ -38,5 +38,5 @@ def water_jug_dfs(x, y, z):
     return False
 
 
-# Example: Jug capacities 4L and 3L, target 2L
+
 water_jug_dfs(4, 3, 2)
